@@ -30,11 +30,11 @@ hypr/
 ## Random wallpaper
 > This script cycles wallpapers in a pseudo-random pattern (never shows the same wallpaper twice in a row, hence pseudo-random).
 
-### 1. Copy [wallpaper-daemon](../hyprland/scripts/wallpaper-daemon) script inside your `hypr/scripts` folder
+### 1. Copy [random-wallpaper](../hyprland/scripts/random-wallpaper) script inside your `hypr/scripts` folder
 
 ### 2. Make it executable
 ```sh
-chmod +x ~/.config/hypr/scripts/wallpaper-daemon
+chmod +x ~/.config/hypr/scripts/random-wallpaper
 ```
 
 ### 3. Create a daemon service
@@ -53,7 +53,7 @@ Requires=hyprpaper.service
 
 [Service]
 Type=simple
-ExecStart=%h/.config/hypr/scripts/wallpaper-daemon
+ExecStart=%h/.config/hypr/scripts/random-wallpaper
 Restart=always
 RestartSec=1
 KillMode=control-group

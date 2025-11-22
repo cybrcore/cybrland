@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+waybar &
+swaync &
+hypridle &
+hyprpaper &
+wl-paste --watch cliphist store &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+udiskie &
+swayosd-server &
+coolercontrol &
+easyeffects --gapplication-service &
