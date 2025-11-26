@@ -1,12 +1,15 @@
-![Cybrpapers banner](./assets/banner.jpg)
-
-Collection of themes for Waybar, Hyprland, kitty, micro, Starship, cava, btop and Firefox inspired by the color palette popularized by **Cyberpunk 2077**.
-
+![Cybrland banner](./assets/banner.jpg)
 
 > [!CAUTION]
-> Themes for **Hyprland**, **Firefox** and **Starship** are still work in progress and were not made with other users in mind.
+> This project is **work in progress**. Use at your own risk. Please, hold off on sharing publicly until v1.0.0 is released.
+>
+> **Current version**: v0.7.5
+> 
+> **v1.0.0 release date**: 2025-12-31
 
-### Themes
+---
+
+# Themes
 <table>
 <tr>
     <td>
@@ -61,7 +64,7 @@ Collection of themes for Waybar, Hyprland, kitty, micro, Starship, cava, btop an
 </tr>
 </table>
 
-### Showcase
+# Showcase
 <p align="left">
   <img src="./assets/inspiration/insp-kitty.png">
   <br>
@@ -89,27 +92,11 @@ Collection of themes for Waybar, Hyprland, kitty, micro, Starship, cava, btop an
 </p>
 
 > [!WARNING]
-> ### Check out my other project
+> Check out my other projects
 > - [Cybrpapers](https://github.com/scherrer-txt/cybrpapers), a collection of hand-made wallpapers
 > - [Cybrcolors](https://github.com/scherrer-txt/cybrcolors), a cyberpunk-inspired color palette!
 
-<table>
-<tr>
-    <td>
-        <a href="https://github.com/scherrer-txt/cybrpapers">
-            <img src="assets/cybrpapers.png" height="60" />
-        </a>
-    </td>
-    <td>
-        <a href="https://github.com/scherrer-txt/cybrcolors">
-            <img src="assets/cybrcolors.png" height="60" />
-        </a>
-    </td>
-</tr>
-</table>
-
-
-## Prerequisites
+# Prerequisites
 - `GeistMono Nerd Font` (download [from here](https://www.nerdfonts.com/font-downloads))
 - hwmon (for waybar to display CPU, GPU and RAM)
 - [rofi](https://github.com/davatorium/rofi) (launcher)
@@ -121,26 +108,24 @@ Collection of themes for Waybar, Hyprland, kitty, micro, Starship, cava, btop an
 - [PipeWire](https://archlinux.org/packages/extra/x86_64/pipewire/) (to control audio with keyboard wheel)
 - [Sidebery](https://github.com/mbnuqw/sidebery) (vertical tabs extension for Firefox)
 
-## Status
-### Done
+# Status
+## Beta
 - [x] Waybar
 - [x] kitty
 - [x] micro
 - [x] cava
 - [x] btop
-- [x] nvtop (takes its colors from kitty)
+- [x] nvtop
 - [x] rofi
-### Alpha
-- [ ] Hyprland
+- [x] Hyprland
+## Alpha
 - [ ] Firefox
 - [ ] Starship
-### WIP (not included)
+## WIP (not included)
 - [ ] swaync
 - [ ] yazi
 - [ ] Spicetify
 - [ ] Obsidian
 - [ ] Vencord
 - [ ] VScode
-
-## To-do
-- [ ] Add support for changing color schemes on the fly (now it's mainly red, I'd like to have cyan, yellow and green too)
+- [ ] Color flavors
