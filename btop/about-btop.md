@@ -3,6 +3,9 @@
 # Cybrtop
 Color theme for btop inspired by the color palette popularized by **Cyberpunk 2077**.
 
+> [!NOTE]
+> This is beta version. Expect minor errors. 
+
 ## Result
 <img src="../assets/inspiration/insp-btop.png" width="800"/></td>
 

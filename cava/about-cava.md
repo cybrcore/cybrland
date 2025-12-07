@@ -3,6 +3,9 @@
 # Cybrcava
 Color theme for cava inspired by the color palette popularized by **Cyberpunk 2077**.
 
+> [!NOTE]
+> This is beta version. Expect minor errors. 
+
 ## Result
 <img src="../assets/inspiration/insp-cava.png" width="800"/></td>
 

@@ -9,7 +9,7 @@ A complete design system and dotfile setup for Hyprland, inspired by cyberpunk a
 
 > [!CAUTION]
 **Status:** Work in progress  
-**Current version:** v0.7.5  
+**Current version:** v0.8.0  
 **Target stable release:** **v1.0.0 on 2025-12-31**
 
 > [!WARNING]
@@ -21,49 +21,101 @@ Please avoid sharing publicly until the 1.0.0 release.
 - **[Cybrpapers](https://github.com/scherrer-txt/cybrpapers)** -- hand-crafted cyberpunk wallpapers  
 - **[Cybrcolors](https://github.com/scherrer-txt/cybrcolors)** -- unified color palette used across all themes
 
+# Showcase
+<p align="left">
+  <img src="./assets/inspiration/insp-starship.png">
+</p>
+<p align="center">
+  <em>Waybar, Hyprland, Kitty, Starship ↗</em>
+</p>
+<br>
+<p align="left">
+  <img src="./assets/inspiration/insp-firefox.png">
+</p>
+<p align="center">
+  <em>Firefox ↗</em>
+</p>
+<br>
+<p align="left">
+  <img src="./assets/inspiration/insp-btop.png">
+</p>
+<p align="center">
+  <em>btop ↗</em>
+</p>
+<br>
+<p align="left">
+  <img src="./assets/inspiration/insp-rofi.png">
+</p>
+<p align="center">
+  <em>rofi ↗ (launcher, clipboard, emoji, powermenu, screenshot menu, wallpaper menu)</em>
+</p>
+<br>
+<p align="left">
+  <img src="./assets/inspiration/insp-swaync.png">
+</p>
+<p align="center">
+  <em>swaync ↗ (floating notifications; control center; control center list)</em>
+</p>
+<br>
+<p align="left">
+  <img src="./assets/inspiration/insp-lock.png">
+</p>
+<p align="center">
+  <em>Hyprlock ↗</em>
+</p>
+
+
 ## Current Status
 
-| Component   | State | Notes |
-|------------|--------|-------------------------------|
-| Waybar     | 🟢 Done | Stable; fully themed |
-| Micro      | 🔵 Beta | Stable; fully themed |
-| Kitty      | 🔵 Beta | Stable; fully themed |
-| Cava       | 🔵 Beta | Stable; fully themed |
-| btop       | 🔵 Beta | Stable; fully themed |
-| nvtop      | 🔵 Beta | Stable; fully themed |
-| Rofi       | 🔵 Beta | Fully themed; minor refinement needed |
-| Hyprland   | 🔵 Beta | Core keybinds, rules, animations |
-| Starship   | 🟡 Alpha | Basic prompt; needs refinement |
-| Firefox    | 🟡 Alpha | Basic theme; needs refinement |
-| VSCode     | 🔴 WIP | Basic theme; early stage |
-| yazi       | 🔴 WIP | Basic theme; early stage |
-| swaync     | 🔴 WIP | Full theme planned |
-| Obsidian   | 🔴 WIP | Plugin-based theme; true standalone theme planned |
-| Spicetify  | 🔴 WIP | Full theme planned |
-| Vencord    | 🔴 WIP | Full theme planned |
-| Emacs/Nvim | 🔴 WIP | Full theme planned |
-| Color flavors | 🔴 WIP | Planned feature |
+| Component   | State | Notes | Last Update |
+|------------|--------|-------------------------------|---|
+| Starship   | 🟢 Done | Fully themed | 2025-12-07 |
+| swaync     | 🟢 Done | Fully themed | 2025-12-07 |
+| broot      | 🟢 Done | Fully themed | 2025-12-07 |
+| fzf        | 🟢 Done | Fully themed | 2025-12-07 |
+| Kitty      | 🟢 Done | Fully themed | 2025-12-07 |
+| Fish       | 🟢 Done | Fully themed | 2025-12-07 |
+| yazi       | 🟢 Done | Fully themed | 2025-12-07 |
+| Rofi       | 🟢 Done | Fully themed | 2025-12-07 |
+| Micro      | 🟢 Done | Fully themed | 2025-12-02 |
+| Waybar     | 🟢 Done | Fully themed | 2025-11-23 |
+| Cava       | 🟢 Done | Fully themed | 2025-11-14 |
+| btop       | 🟢 Done | Fully themed | 2025-11-14 |
+| nvtop      | 🟢 Done | Fully themed | 2025-11-14 |
+| Hyprland   | 🟡 Beta | Fully themed; polishing | 2025-12-07 |
+| Cybrcursors | 🔴 Alpha | Fully themed; polishing | 2025-12-07 |
+| VSCode     | 🔴 Alpha | Basic theme; early stage | 2025-11-20 |
+| Firefox    | 🔴 Alpha | Basic theme; refactoring | 2025-11-14 |
+| Obsidian   | 🔴 Alpha | Plugin-based theme; true standalone theme planned | 2025-08-14 |
+| Neovim     | ⚫ None | Planned theme | n/a |
+| Spicetify  | ⚫ None | Planned theme | n/a |
+| mpv  | ⚫ None | Planned theme | n/a |
+| Color flavors | ⚫ None | Planned feature | n/a |
 
 ## Roadmap
 
 ### v1.0.0 (2025-12-31)
-- **Extensive technical documentation**  
-  Full breakdown of file structure, color tokens, theme philosophy, overrides, scripts, keybinds, and customization workflow to make the entire setup easy to use and extend for others.
-- Finalize Hyprland keybind system; add user guide for creating custom bindings  
-- Complete Firefox theme  
-- Complete VSCode theme  
-- Complete yazi theme  
-- Starship production-ready prompt  
-- Integration of swaync notification theme  
-- Add official color flavors switchable via Waybar or rofi  
-- Stabilize all components listed as 🔵 Beta
+- [ ] **Extensive technical documentation**  
+  Full breakdown of file structure, color tokens, theme philosophy, overrides, scripts, keybinds, and customization workflow to make the entire setup easy to use and extend for others.  
+- [ ] Finalize Hyprland keybind system; add user guide for creating custom bindings  
+- [ ] Firefox theme  
+- [ ] VSCode theme  
+- [ ] Neovim theme  
+- [ ] Custom mouse cursors (working title: *Cybrcursors*)  
+- [ ] Finish all themes listed as 🟡 Beta and 🔴 Alpha  
 
-### v1.5.0 (2026)
-- Standalone Obsidian theme (working title: *Cyberian*)  
-- Spicetify theme  
-- Emacs-Nvim theme
-- Vencord theme
-- Additional wallpaper bundles (Cybrpapers expansion)
+### v1.5.0 (early 2026)
+- [ ] Standalone Obsidian theme (working title: *Cyberian*)  
+- [ ] Add switchable color flavors
+- [ ] Replace waybar/swaync/rofi with quickshell
+- [ ] Replace rofi with Vicinae or Walker
+- [ ] Spicetify theme  
+- [ ] Vencord theme
+- [ ] Additional wallpaper bundles (Cybrpapers expansion)
+
+### v2.0.0 (mid 2026)
+- [ ] Installer script?  
+- [ ] GTK theme?  
 
 ---
 
@@ -98,54 +150,6 @@ Please avoid sharing publicly until the 1.0.0 release.
   </a>
 </div>
 
-# Showcase
-<p align="left">
-  <img src="./assets/inspiration/insp-kitty.png">
-</p>
-<p align="center">
-  <em>Waybar, Hyprland, Kitty, Starship ↗</em>
-</p>
-<br>
-<p align="left">
-  <img src="./assets/inspiration/insp-firefox.png">
-</p>
-<p align="center">
-  <em>Firefox ↗</em>
-</p>
-<br>
-<p align="left">
-  <img src="./assets/inspiration/insp-btop.png">
-</p>
-<p align="center">
-  <em>btop ↗</em>
-</p>
-<br>
-<p align="left">
-  <img src="./assets/inspiration/insp-rofi.png">
-</p>
-<p align="center">
-  <em>rofi ↗ (launcher, clipboard, emoji, powermenu, screenshot menu, wallpaper menu)</em>
-</p>
-<br>
-<p align="left">
-  <img src="./assets/inspiration/insp-lock.png">
-</p>
-<p align="center">
-  <em>Hyprlock ↗</em>
-</p>
-
-# Prerequisites
-- `GeistMono Nerd Font` (download [from here](https://www.nerdfonts.com/font-downloads))
-- hwmon (for waybar to display CPU, GPU and RAM)
-- [rofi](https://github.com/davatorium/rofi) (launcher)
-- [btop](https://github.com/aristocratos/btop) (CPU/RAM/Network resource monitor)
-- [nvtop](https://github.com/Syllo/nvtop) (GPU resource monitor)
-- [swaync](https://github.com/ErikReider/SwayNotificationCenter) (notifications)
-- [topgrade](https://github.com/topgrade-rs/topgrade) (for upgrades)
-- [pulseaudio](https://github.com/pulseaudio/pavucontrol) (to control audio)
-- [PipeWire](https://archlinux.org/packages/extra/x86_64/pipewire/) (to control audio with keyboard wheel)
-- [Sidebery](https://github.com/mbnuqw/sidebery) (vertical tabs extension for Firefox)
-
 # Installation & Pre-flight Guide
 Before applying these dotfiles, follow this short pre-flight checklist to avoid configuration conflicts and ensure a smooth setup.
 
@@ -164,21 +168,25 @@ cp -r ~/.config/btop ~/.backup_configs/btop 2>/dev/null
 
 This allows you to quickly revert if needed.
 
-## 2. Install required dependencies
+## 2. Install prerequisites
 
 Make sure the following components are installed:
-- Hyprland
-- Kitty
-- Waybar
-- Rofi
-- btop
-- nvtop
-- Nerd Font (GeistMono recommended)
-- lm_sensors
+- `GeistMono Nerd Font` (download [from here](https://www.nerdfonts.com/font-downloads))
+- hwmon (for waybar to display CPU, GPU and RAM)
+- [rofi](https://github.com/davatorium/rofi) (launcher)
+- [btop](https://github.com/aristocratos/btop) (CPU/RAM/Network resource monitor)
+- [nvtop](https://github.com/Syllo/nvtop) (GPU resource monitor)
+- [swaync](https://github.com/ErikReider/SwayNotificationCenter) (notifications)
+- [topgrade](https://github.com/topgrade-rs/topgrade) (for upgrades)
+- [pulseaudio](https://github.com/pulseaudio/pavucontrol) (to control audio)
+- [PipeWire](https://archlinux.org/packages/extra/x86_64/pipewire/) (to control audio with keyboard wheel)
+- Firefox
+- [Sidebery](https://github.com/mbnuqw/sidebery) (vertical tabs extension for Firefox)
 
 On Arch Linux:
 ```sh
-sudo pacman -S rofi-wayland kitty waybar btop nvtop lm_sensors
+sudo pacman -S otf-geist-mono-nerd
+sudo pacman -S broot btop cava firefox fish fzf kitty lm_sensors micro nvtop obsidian rofi starship swaync waybar yazi
 sudo sensors-detect
 ```
 

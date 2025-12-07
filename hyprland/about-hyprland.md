@@ -3,8 +3,8 @@
 # Cybrland (WIP)
 Theme for Hyprland window manager inspired by the color palette popularized by **Cyberpunk 2077**.
 
-> [!CAUTION]
-> This theme is still work in progress and was not made with other users in mind. 
+> [!NOTE]
+> This is beta version. Expect minor errors. 
 
 ## Result
 <img src="../assets/inspiration/insp-colors.png" width="800"/></td>
@@ -48,18 +48,17 @@ micro ~/.config/systemd/user/wallpaper-daemon.service
 ```toml
 [Unit]
 Description=Wallpaper rotation daemon for hyprpaper
-After=hyprpaper.service suspend.target
-Requires=hyprpaper.service
 
 [Service]
 Type=simple
-ExecStart=%h/.config/hypr/scripts/random-wallpaper
+ExecStart=%h/.config/hypr/scripts/wallpaper-daemon
 Restart=always
 RestartSec=1
 KillMode=control-group
 
 [Install]
 WantedBy=default.target
+
 ```
 
 ### 5. Run

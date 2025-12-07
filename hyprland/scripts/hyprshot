@@ -59,8 +59,8 @@ function send_notification() {
 
   local message=$([ $CLIPBOARD -eq 1 ] &&
     echo "Image copied to the clipboard" ||
-    echo "Image saved in <i>${1}</i> and copied to the clipboard.")
-  action=$(notify-send -i "$1" --action="view=View" --action="edit=Edit" --action="folder=Open on Folder" "Screenshot saved" \
+    echo "Saved and copied to the clipboard.")
+  action=$(notify-send -i "$1" --action="view=View" --action="folder=Open on Folder" "Screenshot taken" \
     "${message}" \
     -t "$NOTIF_TIMEOUT" -i "${1}" -a Hyprshot)
 
@@ -336,14 +336,14 @@ CLIPBOARD=0
 DEBUG=0
 SILENT=0
 RAW=0
-NOTIF_TIMEOUT=5000
+NOTIF_TIMEOUT=0 #5000
 CURRENT=0
 FREEZE=0
 BORDER_COLOR=\#181926
 BACKGROUND_COLOR=\#8087a25a
 BORDER_WIDTH=0
 [ -z "$XDG_PICTURES_DIR" ] && type xdg-user-dir &>/dev/null && XDG_PICTURES_DIR=$(xdg-user-dir PICTURES)
-FILENAME="$(date +'%Y-%m-%d-%H%M%S_hyprshot.png')"
+FILENAME="shot-$(date +%Y-%m-%d-%H%M%S).png"
 [ -z "$HYPRSHOT_DIR" ] && SAVEDIR=${XDG_PICTURES_DIR:=~} || SAVEDIR=${HYPRSHOT_DIR}
 
 args $0 "$@"

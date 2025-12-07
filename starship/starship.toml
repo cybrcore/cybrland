@@ -1,8 +1,12 @@
+scan_timeout = 100
+
 format = """
 $username\
+[](fg:no1 bg:re2)\
+$shell\
 [](fg:re2 bg:re0)\
 $directory\
-[](fg:re0 bg:cy2)\
+[](fg:re0)\
 $git_branch\
 $git_status\
 $c\
@@ -13,21 +17,25 @@ $gradle\
 $haskell\
 $java\
 $julia\
-$nodejs\
 $nim\
 $rust\
 $scala\
 $docker_context\
 $time\
-[ ](fg:cy2)\
+$line_break$character
 """
 
 palette = "cybr_ship"
 
 [username]
 show_always = true
-style_user = "bg:re2 fg:re0"
+style_user = "bg:no1 fg:re0"
 format = '[ $user ]($style)'
+disabled = false
+
+[shell]
+style = "bg:re2 fg:re0"
+format = '[ $indicator ]($style)'
 disabled = false
 
 [directory]
@@ -36,25 +44,42 @@ format = "[ $path ](bold $style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
+[line_break]
+disabled = false
+
+[jobs]
+disabled = true
+
 [character]
-success_symbol = "[❯](fg:cy0)"
+success_symbol = "[❯ ](fg:re0)"
 error_symbol = "[](fg:re0)"
 vicmd_symbol = "[󰆤](fg:ye0)"
-format = "$symbol "
+format = "$symbol"
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "fg:cy0 bg:cy2"
-format = '[ $time ]($style)'
+format = '[](fg:cy2)[ $time ]($style)[](fg:cy2)'
+
+[custom.time_arrow]
+disabled = false
+command = 'echo -n ""'
+when = 'true'
+style = "fg:cy2"
+format = '[ $output]($style)'
 
 [custom.transient_time]
 disabled = false
 command = 'date "+%H:%M"'
 when = 'true'
-format = "[$output](fg:cy0)"
+style = "fg:cy0 bg:cy2"
+format = '[ $output ]($style)'
 
 [palettes.cybr_ship]
+no0 = "#030408"
+no1 = "#05070D"
+
 re0 = "#F24848"
 re2 = "#331215"
 
@@ -85,11 +110,11 @@ or2 = "#330F0B"
 [git_branch]
 symbol = ""
 style = "bg:pu2 fg:pu0"
-format = "[ $symbol $branch ]($style)"
+format = "[](fg:pu2)[ $symbol $branch ]($style)[](fg:pu2)"
 
 [git_status]
-style = "bg:pu2 fg:pu0"
-format = "[ $all_status$ahead_behind ]($style)"
+style = "bg:pu0 fg:pu2"   # hlavní blok
+format = "[](fg:pu0)[ $all_status$ahead_behind ]($style)[](fg:pu0)"
 
 [c]
 symbol = ""

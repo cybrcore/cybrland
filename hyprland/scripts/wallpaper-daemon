@@ -3,7 +3,7 @@
 WALLPAPER_DIR="$HOME/.config/hypr/theme/walls"
 LAST_WALL="$HOME/.cache/last_wallpaper.txt"
 TRIGGER="$HOME/.cache/wallpaper_trigger"
-INTERVAL=900 # 60 = 1min
+INTERVAL=900 # 60 = 1min; 900 = 15min
 
 LOCK="/tmp/hyprpaper_daemon.lock"
 exec 200>$LOCK

@@ -3,8 +3,8 @@
 # Rofi
 Theme for Rofi inspired by the color palette popularized by **Cyberpunk 2077**.
 
-> [!CAUTION]
-> This theme is still work in progress, there are some bugs to be fixed. 
+> [!NOTE]
+> This is beta version. Expect minor errors. 
 
 ## Result
 <img src="../assets/inspiration/insp-rofi.png" width="800"/></td>
