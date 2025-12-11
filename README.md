@@ -83,12 +83,12 @@ Please avoid sharing publicly until the 1.0.0 release.
 | [Cava](./cava/about-cava.md)       | 🟢 Done | Fully themed | 2025-11-14 |
 | [btop](./btop/about-btop.md)       | 🟢 Done | Fully themed | 2025-11-14 |
 | nvtop      | 🟢 Done | Fully themed | 2025-11-14 |
+| Neovim     | 🟡 Beta | Fully themed; polishing | 2025-12-10 |
 | [Hyprland](./hyprland/about-hyprland.md)   | 🟡 Beta | Fully themed; polishing | 2025-12-07 |
 | Cybrcursors | 🔴 Alpha | Fully themed; polishing | 2025-12-07 |
 | VSCode     | 🔴 Alpha | Basic theme; early stage | 2025-11-20 |
 | [Firefox](./firefox/about-firefox.md)    | 🔴 Alpha | Basic theme; refactoring | 2025-11-14 |
 | Obsidian   | 🔴 Alpha | Plugin-based theme; true standalone theme planned | 2025-08-14 |
-| Neovim     | ⚫ None | Planned theme | n/a |
 | Spicetify  | ⚫ None | Planned theme | n/a |
 | mpv  | ⚫ None | Planned theme | n/a |
 | Color flavors | ⚫ None | Planned feature | n/a |
@@ -101,7 +101,6 @@ Please avoid sharing publicly until the 1.0.0 release.
 - [ ] Finalize Hyprland keybind system; add user guide for creating custom bindings  
 - [ ] Firefox theme  
 - [ ] VSCode theme  
-- [ ] Neovim theme  
 - [ ] Custom mouse cursors (working title: *Cybrcursors*)  
 - [ ] Finish all themes listed as 🟡 Beta and 🔴 Alpha  
 
@@ -110,8 +109,7 @@ Please avoid sharing publicly until the 1.0.0 release.
 - [ ] Add switchable color flavors
 - [ ] Replace waybar/swaync/rofi with quickshell
 - [ ] Replace rofi with Vicinae or Walker
-- [ ] Spicetify theme  
-- [ ] Vencord theme
+- [ ] Themes for Spotify and Discord alternatives  
 - [ ] Additional wallpaper bundles (Cybrpapers expansion)
 
 ### v2.0.0 (mid 2026)
