@@ -160,36 +160,3 @@ $EDITOR ~/.config/hypr/scripts/services
 ```
 
 These are essential services for Hyprland to function properly.
-
-### 5. Random wallpaper
-This script cycles wallpapers in a pseudo-random pattern (never shows the same wallpaper twice in a row).
-
-```sh
-# Create systemd user directory
-mkdir -p ~/.config/systemd/user
-
-# Create wallpaper daemon service
-cat <<'EOF' > ~/.config/systemd/user/wallpaper-daemon.service
-[Unit]
-Description=Wallpaper rotation daemon for hyprpaper
-
-[Service]
-Type=simple
-ExecStart=%h/.config/hypr/scripts/wallpaper-daemon
-Restart=always
-RestartSec=5
-KillMode=control-group
-
-[Install]
-WantedBy=default.target
-EOF
-
-# Reload systemd and enable service (chained for safety)
-systemctl --user daemon-reload && systemctl --user enable --now wallpaper-daemon.service && systemctl --user status wallpaper-daemon.service
-```
-
-> [!TIP]
-> After modifying the wallpaper script, reload with:
-> ```sh
-> systemctl --user daemon-reload && systemctl --user restart wallpaper-daemon.service && systemctl --user status wallpaper-daemon.service
-> ```
