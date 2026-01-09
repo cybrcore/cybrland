@@ -9,10 +9,10 @@
 [
 	/* BAR 1 */
 	{
-		"include": "/home/sch/.config/waybar/modules.jsonc",
+		"include": "/home/$HOME/.config/waybar/modules.jsonc",
 		"height": 31,
 		"layer": "top",
-		"output": "HDMI-A-1",
+		// "output": "HDMI-A-1",
 		"mode": "dock",
 		"exclusive": true,
 		"passtrough": false,
@@ -46,8 +46,8 @@
 		]
 	},
 	/* BAR 2 */
-	{
-		"include": "/home/sch/.config/waybar/modules.jsonc",
+	/* {
+		"include": "/home/$HOME/.config/waybar/modules.jsonc",
 		"height": 31,
 		"layer": "top",
 		"output": "DP-2",
@@ -85,4 +85,5 @@
 			"tray"
 		]
 	}
+*/
 ]
