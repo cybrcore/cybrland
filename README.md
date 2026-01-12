@@ -88,12 +88,12 @@
 - **[newsboat](./newsboat/readme.md)** - CLI RSS/Atom reader
 
 ### WIP
-- **[neovim](./nvim/readme.md)** - Fully themed, polishing
-- **[firefox](./firefox/readme.md)** - Fully themed, major refactor planned
-- **Cybrcursors** - Fully themed, polishing
-- **VSCode** - Partially themed
-- **Obsidian** - Standalone theme planned
-- **GTK** - Early stage
+- **[neovim](./nvim/readme.md)** - Fully themed, polishing  
+- **[firefox](./firefox/readme.md)** - Fully themed, major refactor planned  
+- **[gtk](./gtk/readme.md)** - Early stage  
+- **Cybrcursors** - Fully themed, polishing (*Unreleased*)  
+- **VSCode** - Partially themed (*Unreleased*)  
+- **Obsidian** - Standalone theme planned (*Unreleased*)  
 
 ## Related Projects
 These can be used independently of Cybrland:  
