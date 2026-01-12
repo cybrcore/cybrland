@@ -1,5 +1,19 @@
 # AI Usage Disclosure
 
+## Content
+- [Why this document exists](#why-this-document-exists)
+- [My Use of AI](#my-use-of-ai)
+  - [Rationale](#rationale)
+  - [Examples](#examples)
+  - [Tools](#tools)
+  - [What AI does](#what-ai-does)
+  - [What AI doesn't do](#what-ai-doesnt-do)
+  - [Workflow](#workflow)
+  - [Responsibility](#responsibility)
+- [For contributors](#for-contributors)
+
+---
+
 ## Why this document exists
 Transparency about AI tool usage matters. This document:
 1. Describes and clarifies how and when I use AI in this project

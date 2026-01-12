@@ -1,37 +1,32 @@
 ![Cybrland banner](./assets/banner.jpg)
-
-# Cybrland
-**Cyberpunk design system**
-
-**Version:** v1.1.1  |  **Status:** Stable (2026-01-11)  
-**[Design Philosophy](PHILOSOPHY.md)**  |  **[AI Usage Disclosure](AI-DISCLOSURE.md)**  
-Daily driven on Arch + Hyprland, individual themes work anywhere  
-
 <p align="center">
   <a href="https://stand-with-ukraine.pp.ua/">
     <img alt="standwithukraine" src="https://img.shields.io/badge/Support-Ukraine-FFC93C?style=flat-square&labelColor=07689F">
   </a>
 </p>
 
+# Cybrland
+> [!NOTE]
+> **Cyberpunk design system**  
+> Daily driven on Arch + Hyprland, individual themes work anywhere  
+> 
+> **Version:** v1.1.1  
+> **Status:** Stable (2026-01-11)  
+
+[![Install Guide](./assets/install.png)](INSTALL.md) &nbsp; [![Roadmap](./assets/roadmap.png)](ROADMAP.md)
+
+[![Design Philosophy](./assets/philosophy.png)](PHILOSOPHY.md) &nbsp; [![AI Disclosure](./assets/ai-usage.png)](AI-DISCLOSURE.md) &nbsp; [![Contributing](./assets/contributing.png)](AI-DISCLOSURE.md)
+
 ## Content
 - [What's Inside](#whats-inside)
 - [Showcase](#showcase)
-- [Included Themes](#included-themes)
-  - [Core System](#-core-system)
-  - [Utilities](#-utilities)
-  - [Testing](#-testing)
-- [How To Install](#how-to-install)
+- [Themes](#themes)
 - [Related Projects](#related-projects)
-- [Roadmap](#roadmap)
-  - [v1.0.0](#v100-2025-12-31)
-  - [v1.5.0](#v150-early-mid-2026)
-  - [v2.0.0](#v200-mid-late-2026)
 - [Credits & Inspiration](#credits--inspiration)
-- [License](#license)
 
 ## What's Inside
-- **Unified aesthetic** - Custom cyberpunk palette (Cybrcolors) + 9 hand-crafted wallpapers (Cybrpapers)  
-- **Theme collection** - Custom themes for 17+ applications  
+- **Unified aesthetic** - Custom cyberpunk palette ([Cybrcolors](https://github.com/scherrer-txt/cybrcolors)) + 9 hand-crafted wallpapers ([Cybrpapers](https://github.com/scherrer-txt/cybrpapers))  
+- **Theme collection** - Custom themes for 17+ applications (*more soon!*)  
 - **Terminal-centric workflow** - Fast, integrated TUI/CLI tools  
 - **Modular by design** - Use the full setup or cherry-pick individual themes  
 - **Beginner-friendly docs** - Step-by-step guides with explanations + advanced patterns for power users  
@@ -71,11 +66,8 @@ Daily driven on Arch + Hyprland, individual themes work anywhere
   <em>swaync ↗ (floating notifications; control center; control center list)</em>
 </p>
 
-## Included Themes
-
-### 🟢 Core System
-Complete themes with full documentation:
-
+## Themes
+### Core System
 - **[hyprland](./hypr/readme.md)** - Tiling window manager
 - **[kitty](./kitty/readme.md)** - Terminal emulator
 - **[fish](./fish/readme.md)** - User-friendly shell
@@ -84,7 +76,7 @@ Complete themes with full documentation:
 - **[swaync](./swaync/readme.md)** - Notification daemon
 - **[starship](./starship/readme.md)** - Cross-shell prompt
 
-### 🟢 Utilities
+### Utilities
 - **[btop](./btop/readme.md)** - TUI System resource monitor
 - **[yazi](./yazi/readme.md)** - TUI Terminal file manager
 - **[broot](./broot/readme.md)** - CLI Directory navigator
@@ -95,61 +87,25 @@ Complete themes with full documentation:
 - **[fastfetch](./fastfetch/readme.md)** - CLI System information tool  
 - **[newsboat](./newsboat/readme.md)** - CLI RSS/Atom reader
 
-### 🟡 Testing
-- **[neovim](./nvim/readme.md)** - Beta - *Fully themed; polishing*
-- **[firefox](./firefox/readme.md)** - Alpha - *Fully themed; major refactor planned*
-- **Cybrcursors** - Alpha - *Fully themed; polishing*
-- **VSCode** - Alpha - *Early stage*
-- **Obsidian** - Alpha - *Standalone theme planned*
-
-## How To Install
-**New users**: Follow the [Installation Guide](INSTALL.md) for step-by-step setup, backups, and troubleshooting
-**Experienced users**: Check individual `readme.md` files for modular installation
+### WIP
+- **[neovim](./nvim/readme.md)** - Fully themed, polishing
+- **[firefox](./firefox/readme.md)** - Fully themed, major refactor planned
+- **Cybrcursors** - Fully themed, polishing
+- **VSCode** - Partially themed
+- **Obsidian** - Standalone theme planned
+- **GTK** - Early stage
 
 ## Related Projects
+These can be used independently of Cybrland:  
+- [Cybrcolors](https://github.com/scherrer-txt/cybrcolors) - Custom color palette (*foundation for all themes*)
 - [Cybrpapers](https://github.com/scherrer-txt/cybrpapers) - Hand-crafted wallpaper collection
-- [Cybrcolors](https://github.com/scherrer-txt/cybrcolors) - Unified color palette
 - Cybrcursors - Custom mouse cursors ([preview](https://8upload.com/image/d91ecbad191c4ec9/image_3.jpg))
 
-## Roadmap
-
-### v1.0.0 (2025-12-31)
-- [x] Cybrland v1.0.0
-  - [x] Documentation & install guides  
-  - [x] Themes
-    - [x] hyprland, kitty, fish, waybar, rofi, swaync, starship
-    - [x] btop, yazi, broo , fzf, micr , cava, bat
-    - [x] neovim (*beta*)
-    - [x] firefox (*alpha*)
-- [x] Cybrcolors v1.0
-- [x] Cybrpapers v1.0
-
-### v1.5.0 (Early-mid 2026)
-- [ ] Cybrland: Installer script & override patterns
-- [ ] Cybrland: Extended multi-distro support documentation
-- [ ] Cybrland: System-wide unification of syntax highlights, based on [tonsky's](https://github.com/tonsky) highlight [philosophy](https://tonsky.me/blog/syntax-highlighting/)
-- [ ] Cybrland: Finish alpha themes (Firefox, VSCode, Obsidian)
-- [ ] Cybrland: Music player theme (rmpc/Spicetify)
-- [ ] Cybrland: Chat app theme (Vencord)
-- [ ] Cybrland: Theme switcher
-- [ ] Cybrpapers v2.0: Additional Cybrpaper wallpapers
-- [ ] Cybrcursors v1.0
-- [ ] Cybrscreen v1.0: Screensaver(s)
-
-**Under consideration:**
-- Replace waybar/swaync/rofi with quickshell
-- Alternative launcher (Vicinae or Walker)
-
-### v2.0.0 (Mid-late 2026)
-- [ ] Cybrland: GTK theme  
-- [ ] ???  
-
 ## Credits & Inspiration
-
 This project builds on the work of many talented creators:
 
 **Dotfile foundations:**
-- [Matt-FTW/dotfiles](https://github.com/Matt-FTW/dotfiles) - Many of Hyprland configs are based on their dotfiles, theirs was my first Hyprland theme, and thanks to them I discovered Catppuccin
+- [Matt-FTW/dotfiles](https://github.com/Matt-FTW/dotfiles) - Many of Hyprland configs (*keybinds, scripts*) are based on their dotfiles  
 
 **Theming & aesthetics:**
 - [Catppuccin](https://github.com/catppuccin/catppuccin) - This project showed me what's possible with themes, it's overall scope is inspiration and aspiration at the same time
