@@ -18,7 +18,6 @@ theme[inactive_fg]="#631F21"
 theme[meter_bg]="#212638"
 theme[div_line]="#631F21"
 
-# Graph background — принудительно тёмный, чтобы избежать светлого "поля" в графиках
 theme[graph_bg]="#030408"
 
 theme[graph_text]="#F24848"
