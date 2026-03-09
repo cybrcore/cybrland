@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WALLPAPERS_DIR="$HOME/.config/hypr/theme/walls"
+WALLPAPERS_DIR="$HOME/.config/hypr/walls"
 STYLE="$HOME/.config/rofi/scripts/wallpaper/style.rasi"
 
 # Pick a wallpaper via rofi
@@ -19,6 +19,6 @@ wp="$WALLPAPERS_DIR/$choice"
 killall hyprpaper
 hyprpaper &
 
-sleep 0.1
+sleep 0.2
 hyprctl hyprpaper wallpaper "DP-2,$wp"
 hyprctl hyprpaper wallpaper "HDMI-A-1,$wp"
