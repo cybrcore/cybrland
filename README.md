@@ -10,8 +10,8 @@
 > **Cyberpunk design system**  
 > Daily driven on Arch + Hyprland, individual themes work anywhere  
 > 
-> **Version:** v1.1.1  
-> **Status:** Stable (2026-01-11)  
+> **Version:** v1.1.3  
+> **Status:** Stable (2026-03-22)  
 
 [![Install Guide](./assets/install.png)](INSTALL.md) &nbsp; [![Roadmap](./assets/roadmap.png)](ROADMAP.md)
 
