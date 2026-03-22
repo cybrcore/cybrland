@@ -23,9 +23,9 @@
 
 ## 1. Create theme file
 ```sh
-$EDITOR ~/.config/yazi/CYBRyazi.theme
+$EDITOR ~/.config/yazi/theme.theme
 ```
-## 2. Insert [CYBRyazi](CYBRyazi.toml)
+## 2. Insert [CYBRyazi](theme.toml)
 ## 3. Restart yazi
 ```sh
 killall yazi && yazi
