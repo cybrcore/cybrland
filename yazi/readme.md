@@ -23,7 +23,7 @@
 
 ## 1. Create theme file
 ```sh
-$EDITOR ~/.config/yazi/theme.theme
+$EDITOR ~/.config/yazi/theme.toml
 ```
 ## 2. Insert [CYBRyazi](theme.toml)
 ## 3. Restart yazi
