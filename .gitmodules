@@ -25,3 +25,6 @@
 [submodule "gtk"]
 	path = gtk
 	url = https://github.com/cybrcore/cybr-gtk.git
+[submodule "micro"]
+	path = micro
+	url = https://github.com/cybrcore/cybr-micro.git
