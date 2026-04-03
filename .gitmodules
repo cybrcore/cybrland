@@ -55,3 +55,6 @@
 [submodule "firefox"]
 	path = firefox
 	url = https://github.com/cybrcore/cybr-firefox.git
+[submodule "obsidian"]
+	path = obsidian
+	url = https://github.com/cybrcore/cybr-obsidian.git
