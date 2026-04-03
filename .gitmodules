@@ -28,3 +28,6 @@
 [submodule "micro"]
 	path = micro
 	url = https://github.com/cybrcore/cybr-micro.git
+[submodule "newsboat"]
+	path = newsboat
+	url = https://github.com/cybrcore/cybr-newsboat.git
