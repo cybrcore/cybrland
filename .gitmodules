@@ -1,0 +1,3 @@
+[submodule "bat"]
+	path = bat
+	url = https://github.com/cybrcore/cybr-bat.git
