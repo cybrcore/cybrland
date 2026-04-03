@@ -10,3 +10,6 @@
 [submodule "btop"]
 	path = btop
 	url = https://github.com/cybrcore/cybr-btop.git
+[submodule "cava"]
+	path = cava
+	url = https://github.com/cybrcore/cybr-cava.git
