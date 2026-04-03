@@ -37,3 +37,6 @@
 [submodule "rofi"]
 	path = rofi
 	url = https://github.com/cybrcore/cybr-rofi.git
+[submodule "starship"]
+	path = starship
+	url = https://github.com/cybrcore/cybr-starship.git
