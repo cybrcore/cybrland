@@ -19,3 +19,6 @@
 [submodule "fish"]
 	path = fish
 	url = https://github.com/cybrcore/cybr-fish.git
+[submodule "fzf"]
+	path = fzf
+	url = https://github.com/cybrcore/cybr-fzf.git
