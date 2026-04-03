@@ -1,3 +1,10 @@
+> [!WARNING]
+> **PROJECT UNDER CONSTRUCTION**  
+> Project is now undergoing large scale restructuring.  
+> Themes are functioning; expect broken links.  
+
+---
+
 ![Cybrland banner](./assets/banner.jpg)
 <p align="center">
   <a href="https://stand-with-ukraine.pp.ua/">
