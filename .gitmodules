@@ -52,3 +52,6 @@
 [submodule "stylus"]
 	path = stylus
 	url = https://github.com/cybrcore/cybr-stylus.git
+[submodule "firefox"]
+	path = firefox
+	url = https://github.com/cybrcore/cybr-firefox.git
