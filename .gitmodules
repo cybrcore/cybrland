@@ -34,3 +34,6 @@
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/cybrcore/cybr-nvim.git
+[submodule "rofi"]
+	path = rofi
+	url = https://github.com/cybrcore/cybr-rofi.git
