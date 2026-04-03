@@ -4,3 +4,6 @@
 [submodule "kitty"]
 	path = kitty
 	url = https://github.com/cybrcore/cybr-kitty.git
+[submodule "broot"]
+	path = broot
+	url = https://github.com/cybrcore/cybr-broot.git
