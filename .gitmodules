@@ -13,3 +13,6 @@
 [submodule "cava"]
 	path = cava
 	url = https://github.com/cybrcore/cybr-cava.git
+[submodule "fastfetch"]
+	path = fastfetch
+	url = https://github.com/cybrcore/cybr-fastfetch.git
