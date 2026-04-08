@@ -72,10 +72,10 @@ Choose any editor you prefer (nano, vim, neovim). Just make sure it's installed 
 ```sh
 # Should show 16 colored bars labeled COLOR 0 through COLOR 15
 for i in (seq 0 15)
-	echo -e "\e[48;5;$i""m  COLOR $i  \e[0m"
+  echo -e "\e[48;5;$i""m  COLOR $i  \e[0m"
 end
 ```
-If you use a different terminal, extract ANSI values from [CYBRkitty](./kitty/CYBRkitty.conf) and apply them to your terminal emulator. Make sure your terminal of choice supports truecolor and transparency.
+If you use a different terminal, extract ANSI values from [cybr-kitty](https://github.com/cybrcore/cybr-kitty) and apply them to your terminal emulator. Make sure your terminal of choice supports truecolor and transparency.
 
 ### 4. Backup existing configs
 Before installing, complete these steps to avoid conflicts:
@@ -132,35 +132,39 @@ Each component has its own setup guide.
 
 ### Method 1: Individual Components (Recommended)
 Download only what you need manually or using sparse checkout. See component-specific guides:
-- [Hyprland](./hypr/readme.md)
-- [Waybar](./waybar/readme.md)
-- [Kitty](./kitty/readme.md)
+- [cybr-hyprland](https://github.com/cybrcore/cybrland)
+- [cybr-waybar](https://github.com/cybrcore/cybr-waybar)
+- [cybr-kitty](https://github.com/cybrcore/cybr-kitty)
 - ...  
+
+> [!WARNING]
+> Sections below are under construction.
 
 #### How sparse checkout works
 > [!WARNING]
 > This will overwrite existing configs in `~/.config/`. Back up your current setup first! See [step 4](#4-backup-existing-configs).
+> Replace `$APP` with the name of the theme you want to download
 ```sh
 # 1. Clone repository without files and commit history (metadata only)
-git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git
+git clone --depth=1 --filter=blob:none --no-checkout https://github.com/cybrcore/cybr-$APP.git
 
 # 2. Enter repository
-cd cybrland
+cd cybr-$APP
 
 # 3. Enable sparse checkout
 git sparse-checkout init --cone
 
 # 4. Select which directory to download
-git sparse-checkout set foo
+git sparse-checkout set $APP
 
 # 5. Download selected files
 git checkout main
 
 # 6. Move to your config
-mv foo ~/.config/
+mv $APP ~/.config/
 
 # 7. Clean up
-cd ~ && rm -rf cybrland
+cd ~ && rm -rf cybrcore
 
 # Never skip step 7, because:
 # - Removes git repository and history
@@ -170,18 +174,18 @@ cd ~ && rm -rf cybrland
 ```
 I provided a one-line version in each `readme.md`, which you can copy & paste into your terminal, and it looks like this:
 ```sh
-git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git && cd cybrland && git sparse-checkout init --cone && git sparse-checkout set foo && git checkout main && mv foo ~/.config/ && cd ~ && rm -rf cybrland
+git clone --depth=1 --filter=blob:none --no-checkout https://github.com/cybrcore/cybr-$APP.git && cd cd cybr-$APP && git sparse-checkout init --cone && git sparse-checkout set $APP && git checkout main && mv $APP ~/.config/ && cd ~ && rm -rf cd cybr-$APP
 ```
 
 ### Method 2. Full Repository (Power Users)
 > [!WARNING]
-> This will overwrite existing configs in `~/.config/`. Back up your current setup first! See [step 4](#4-backup-existing-configs).
+> This method is a stopgap until the installer ships.
+> This method will overwrite existing configs in `~/.config/`. Back up your current setup first! See [step 4](#4-backup-existing-configs).
+
 #### 1. Download repo
 ```sh
 # Clone repo and cleanup
-git clone --depth=1 https://github.com/scherrer-txt/cybrland.git ~/cybrland
-cd ~/cybrland
-rm -rf assets stylus .git  # Saves ~170 MB
+git clone --depth=1 --recurse-submodules https://github.com/cybrcore/cybrland.git ~/cybrland
 
 # Move configs to ~/.config
 for dir in */; do
@@ -204,13 +208,12 @@ chmod +x \
 
 **How it works:**
 1. Clones repo with minimal history (`--depth=1`)
-2. Removes unnecessary files (assets, stylus source, git history)
-3. Copies all config directories to `~/.config/`
-4. Cleans up temporary clone
-5. Makes scripts executable
+2. Pulls all linked submodules (`--recurse-submodules`)
+3. Downloads everything into `~/cybrland`
+4. Makes scripts executable
 
 #### 2. Adjust
-You will need to adjust monitor settings for [waybar](./waybar/readme.md) and [hyprland](./hypr/readme.md), see documentation for guidance.
+You will need to adjust monitor settings for [cybr-waybar](https://github.com/cybrcore/cybr-waybar) and [cybr-hyprland](https://github.com/cybrcore/cybrland), see documentation for guidance.
 
 ## Post-installation Verification
 After setup, test these components:  

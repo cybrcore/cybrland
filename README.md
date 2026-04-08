@@ -1,11 +1,4 @@
-> [!WARNING]
-> **PROJECT UNDER CONSTRUCTION**  
-> Project is now undergoing large scale restructuring.  
-> Themes are functioning; expect broken links.  
-
----
-
-![Cybrland banner](./assets/banner.jpg)
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/repo-banners/cybr-bat-banner.png" height=200px/>
 <p align="center">
   <a href="https://stand-with-ukraine.pp.ua/">
     <img alt="standwithukraine" src="https://img.shields.io/badge/Support-Ukraine-FFC93C?style=flat-square&labelColor=07689F">
@@ -14,15 +7,15 @@
 
 # Cybrland
 > [!NOTE]
-> **Cyberpunk design system**  
-> Daily driven on Arch + Hyprland, individual themes work anywhere  
+> **Lucid dotfiles for hyprland**  
+> Daily driven on Arch + Hyprland as a whole, individual themes should work anywhere  
 > 
-> **Version:** v1.1.3  
-> **Status:** Stable (2026-03-22)  
+> **Version:** v2.0.0  
+> **Status:** Stable (2026-04-08)  
 
-[![Install Guide](./assets/install.png)](INSTALL.md) &nbsp; [![Roadmap](./assets/roadmap.png)](ROADMAP.md)
+[![Install Guide](https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/install.png)](INSTALL.md) &nbsp; [![Roadmap](https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/roadmap.png)](https://github.com/cybrcore/cybrcore/blob/main/ROADMAP.md)
 
-[![Design Philosophy](./assets/philosophy.png)](PHILOSOPHY.md) &nbsp; [![AI Disclosure](./assets/ai-usage.png)](AI-DISCLOSURE.md) &nbsp; [![Contributing](./assets/contributing.png)](CONTRIBUTING.md)
+[![Design Philosophy](https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/philosophy.png)](https://github.com/cybrcore/cybrcore) &nbsp; [![AI Disclosure](https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/ai-usage.png)](https://github.com/cybrcore/cybrcore/blob/main/AI-DISCLOSURE.md) &nbsp; [![Contributing](https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/contributing.png)](https://github.com/cybrcore/cybrcore/blob/main/CONTRIBUTING.md)
 
 ## Content
 - [What's Inside](#whats-inside)
@@ -32,81 +25,83 @@
 - [Credits & Inspiration](#credits--inspiration)
 
 ## What's Inside
-- **Unified aesthetic** - Custom cyberpunk palette ([Cybrcolors](https://github.com/scherrer-txt/cybrcolors)) + 9 hand-crafted wallpapers ([Cybrpapers](https://github.com/scherrer-txt/cybrpapers))  
-- **Theme collection** - Custom themes for 17+ applications (*more soon!*)  
+- **Unified aesthetic** - Lucid color palette ([cybrcolors](https://github.com/cybrcore/cybrcolors)) + 9 hand-crafted wallpapers ([cybrpapers](https://github.com/cybrcore/cybrpapers))  
+- **Theme collection** - Custom themes for 20+ applications  
 - **Terminal-centric workflow** - Fast, integrated TUI/CLI tools  
 - **Modular by design** - Use the full setup or cherry-pick individual themes  
-- **Beginner-friendly docs** - Step-by-step guides with explanations + advanced patterns for power users  
+- **Beginner-friendly docs** (WIP) - Step-by-step guides with explanations + advanced patterns for power users  
 
 ## Showcase
-<img src="./assets/inspiration/insp-main1.png">
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/showcase/cybr-hyprland-hero1.png">
 <p align="center">
   <em>Left-to-right: Neovim, rofi-launcher, cava, fastfetch, custom script ↗</em>
 </p>
 <br>
-<img src="./assets/inspiration/insp-main2.png">
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/showcase/cybr-hyprland-hero2.png">
 <p align="center">
   <em>Left-to-right: stacked micro, yazi, broot ↗</em>
 </p>
 <br>
-<img src="./assets/inspiration/insp-main3.png">
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/showcase/cybr-hyprland-hero3.png">
 <p align="center">
   <em>Firefox w/Cybrspace.online custom theme ↗</em>
 </p>
 <br>
-<img src="./assets/inspiration/insp-main4.png">
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/showcase/cybr-hyprland-hero4.png">
 <p align="center">
   <em>Left-to-right: clock, btop, ls ↗</em>
 </p>
 <br>
-<img src="./assets/inspiration/insp-main5.png">
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/showcase/cybr-hyprland-hero5.png">
 <p align="center">
   <em>Fore-to-back: wallpaper selector, neovim, matrix ↗</em>
 </p>
 <br>
-<img src="./assets/inspiration/insp-firefox.png">
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/showcase/cybr-firefox-all.png">
 <p align="center">
   <em>Firefox w/Sidebery ↗</em>
 </p>
-<img src="./assets/inspiration/insp-swaync.png">
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/showcase/cybr-swaync.png">
 <p align="center">
   <em>swaync ↗ (floating notifications; control center; control center list)</em>
 </p>
 
 ## Themes
 ### Core System
-- **[hyprland](./hypr/readme.md)** - Tiling window manager
-- **[kitty](./kitty/readme.md)** - Terminal emulator
-- **[fish](./fish/readme.md)** - User-friendly shell
-- **[waybar](./waybar/readme.md)** - Status bar with custom modules
-- **[rofi](./rofi/readme.md)** - Application launcher & menus
-- **[swaync](./swaync/readme.md)** - Notification daemon
-- **[starship](./starship/readme.md)** - Cross-shell prompt
+- **[cybr-hyprland](https://github.com/cybrcore/cybrland)** - Tiling window manager
+- **[cybr-kitty](https://github.com/cybrcore/cybr-kitty)** - Terminal emulator
+- **[cybr-fish](https://github.com/cybrcore/cybr-fish)** - User-friendly shell
+- **[cybr-waybar](https://github.com/cybrcore/cybr-waybar)** - Status bar with custom modules
+- **[cybr-rofi](https://github.com/cybrcore/cybr-rofi)** - Application launcher & menus
+- **[cybr-swaync](https://github.com/cybrcore/cybr-swaync)** - Notification daemon
+- **[cybr-starship](https://github.com/cybrcore/cybr-starship)** - Cross-shell prompt
 
 ### Utilities
-- **[btop](./btop/readme.md)** - TUI System resource monitor
-- **[yazi](./yazi/readme.md)** - TUI Terminal file manager
-- **[broot](./broot/readme.md)** - CLI Directory navigator
-- **[fzf](./fzf/readme.md)** - CLI Fuzzy finder
-- **[micro](./micro/readme.md)** - TUI Lightweight text editor
-- **[cava](./cava/readme.md)** - CLI Audio visualizer
-- **[bat](./bat/readme.md)** - CLI Syntax-highlighted file viewer 
-- **[fastfetch](./fastfetch/readme.md)** - CLI System information tool  
-- **[newsboat](./newsboat/readme.md)** - CLI RSS/Atom reader
+- **[cybr-obsidian](https://github.com/cybrcore/cybr-obsidian)** - GUI Note-taking app
+- **[cybr-btop](https://github.com/cybrcore/cybr-btop)** - TUI System resource monitor
+- **[cybr-yazi](https://github.com/cybrcore/cybr-yazi)** - TUI Terminal file manager
+- **[cybr-broot](https://github.com/cybrcore/cybr-broot)** - CLI Directory navigator
+- **[cybr-fzf](https://github.com/cybrcore/cybr-fzf)** - CLI Fuzzy finder
+- **[cybr-micro](https://github.com/cybrcore/cybr-micro)** - TUI Lightweight text editor
+- **[cybr-cava](https://github.com/cybrcore/cybr-cava)** - CLI Audio visualizer
+- **[cybr-bat](https://github.com/cybrcore/cybr-bat)** - CLI Syntax-highlighted file viewer 
+- **[cybr-fastfetch](https://github.com/cybrcore/cybr-fastfetch)** - CLI System information tool  
+- **[cybr-newsboat](https://github.com/cybrcore/cybr-newsboat)** - CLI RSS/Atom reader
+
+### UserStyles
+- **[cybr-cyberspace.online](https://github.com/cybrcore/cybr-cyberspace.online)** - A mystery
 
 ### WIP
-- **[neovim](./nvim/readme.md)** - Fully themed, polishing  
-- **[firefox](./firefox/readme.md)** - Fully themed, major refactor planned  
-- **[gtk](./gtk/readme.md)** - Early stage  
-- **Cybrcursors** - Fully themed, polishing (*Unreleased*)  
-- **VSCode** - Partially themed (*Unreleased*)  
-- **Obsidian** - Standalone theme planned (*Unreleased*)  
+- **[cybr-neovim](https://github.com/cybrcore/cybr-nvim)** - Fully themed, polishing  
+- **[cybr-firefox](https://github.com/cybrcore/cybr-firefox)** - Fully themed, major refactor planned  
+- **[cybr-gtk](https://github.com/cybrcore/cybr-gtk)** - Early stage  
+- **cybr-vscode** - Partially themed (*Unreleased*)  
+- **cybrcursors** - Fully themed, polishing (*Unreleased*, [preview](https://8upload.com/image/d91ecbad191c4ec9/image_3.jpg))  
 
 ## Related Projects
-These can be used independently of Cybrland:  
-- [Cybrcolors](https://github.com/scherrer-txt/cybrcolors) - Custom color palette (*foundation for all themes*)
-- [Cybrpapers](https://github.com/scherrer-txt/cybrpapers) - Hand-crafted wallpaper collection
-- Cybrcursors - Custom mouse cursors ([preview](https://8upload.com/image/d91ecbad191c4ec9/image_3.jpg))
+- [cybrcolors](https://github.com/cybrcore/cybrcolors) - Custom color palette (*foundation for all themes*)  
+- [cybrpapers](https://github.com/cybrcore/cybrpapers) - Hand-crafted wallpaper collection for mobile and desktop  
+- [cybrcore](https://github.com/cybrcore/cybrcore) - The foundry  
 
 ## Credits & Inspiration
 This project builds on the work of many talented creators:
