@@ -58,3 +58,6 @@
 [submodule "obsidian"]
 	path = obsidian
 	url = https://github.com/cybrcore/cybr-obsidian.git
+[submodule "hypr"]
+	path = hypr
+	url = https://github.com/cybrcore/cybr-hyprland.git
