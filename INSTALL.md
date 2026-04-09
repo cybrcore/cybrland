@@ -1,8 +1,8 @@
 # Installation Guide
 > [!IMPORTANT]
-> Terminal-first approach: This guide uses the command line extensively. Every command is explained and copy-paste ready. If you're new to terminals, this is a great opportunity to learn - by the end, you'll be more confident navigating your system.
+> Terminal-first approach: This guide uses the command line extensively. Every command is explained and copy-paste ready. If you're new to terminals, this is a great opportunity to learn -- by the end, you'll be more confident navigating your system.
 > 
-> Most tools used in Cybrland are TUI/CLI - fast, lightweight, and fitting the aesthetic.  
+> Most tools used in `cybrdots` are TUI/CLI -- fast, lightweight, and fitting the aesthetic.  
 > (*TUI = Text UI, keyboard navigation in terminal; CLI = Command-line, pure terminal commands; GUI = Graphical UI, mouse-driven, visual windows*)
 
 ## Content
@@ -122,23 +122,20 @@ chmod +x ~/.local/bin/revert-hypr
 ### Instalation Order
 Recommended sequence to avoid dependency issues:
 
-1. **kitty** - Terminal emulator (provides ANSI colors for everything else)
-2. **fish** - Shell (optional but recommended)
-3. **hyprland** - Window manager
-4. **waybar** + **swaync** + **rofi** - UI components
-5. Everything else - Utilities, themes, extras
+1. **kitty** -- Terminal emulator (provides ANSI colors for everything else)
+2. **fish** -- Shell (optional but recommended)
+3. **hyprland** -- Window manager
+4. **waybar** + **swaync** + **rofi** -- UI components
+5. Everything else -- Utilities, themes, extras
 
 Each component has its own setup guide.
 
 ### Method 1: Individual Components (Recommended)
 Download only what you need manually or using sparse checkout. See component-specific guides:
-- [cybr-hyprland](https://github.com/cybrcore/cybrland)
+- [cybr-hyprland](https://github.com/cybrcore/cybr-hyprland)
 - [cybr-waybar](https://github.com/cybrcore/cybr-waybar)
 - [cybr-kitty](https://github.com/cybrcore/cybr-kitty)
 - ...  
-
-> [!WARNING]
-> Sections below are under construction.
 
 #### How sparse checkout works
 > [!WARNING]
@@ -185,13 +182,13 @@ git clone --depth=1 --filter=blob:none --no-checkout https://github.com/cybrcore
 #### 1. Download repo
 ```sh
 # Clone repo and cleanup
-git clone --depth=1 --recurse-submodules https://github.com/cybrcore/cybrland.git ~/cybrland
+git clone --depth=1 --recurse-submodules https://github.com/cybrcore/cybrdots.git ~/cybrdots
 
 # Move configs to ~/.config
 for dir in */; do
   [[ -d "$dir" ]] && cp -r "$dir" ~/.config/
 done
-cd ~ && rm -rf ~/cybrland
+cd ~ && rm -rf ~/cybrdots
 
 # Make all scripts executable
 chmod +x \
@@ -209,11 +206,11 @@ chmod +x \
 **How it works:**
 1. Clones repo with minimal history (`--depth=1`)
 2. Pulls all linked submodules (`--recurse-submodules`)
-3. Downloads everything into `~/cybrland`
+3. Downloads everything into `~/cybrdots`
 4. Makes scripts executable
 
 #### 2. Adjust
-You will need to adjust monitor settings for [cybr-waybar](https://github.com/cybrcore/cybr-waybar) and [cybr-hyprland](https://github.com/cybrcore/cybrland), see documentation for guidance.
+You will need to adjust monitor settings for [cybr-waybar](https://github.com/cybrcore/cybr-waybar) and [cybr-hyprland](https://github.com/cybrcore/cybr-hyprland), see linked documentation for guidance.
 
 ## Post-installation Verification
 After setup, test these components:  
