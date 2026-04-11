@@ -66,10 +66,6 @@
 	path = yazi
 	url = https://github.com/cybrcore/cybr-yazi.git
 	branch = main
-[submodule "stylus"]
-	path = stylus
-	url = https://github.com/cybrcore/cybr-stylus.git
-	branch = main
 [submodule "firefox"]
 	path = firefox
 	url = https://github.com/cybrcore/cybr-firefox.git
