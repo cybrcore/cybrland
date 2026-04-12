@@ -8,15 +8,26 @@
 
 # cybrdots
 > [!NOTE]
-> **Lucid dotfiles for hyprland**  
+> **Lucid dotfiles for Arch Linux**  
 > Daily driven on Arch + Hyprland as a whole, individual themes should work anywhere  
 > 
 > **Version:** v2.0.0  
 > **Status:** Stable (2026-04-08)  
 
-[![Install Guide](https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/install.png)](INSTALL.md) &nbsp; [![Roadmap](https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/roadmap.png)](https://github.com/cybrcore/cybrcore/blob/main/ROADMAP.md)
-
-[![Design Philosophy](https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/philosophy.png)](https://github.com/cybrcore/cybrcore) &nbsp; [![AI Disclosure](https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/ai-usage.png)](https://github.com/cybrcore/cybrcore/blob/main/AI-DISCLOSURE.md) &nbsp; [![Contributing](https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/contributing.png)](https://github.com/cybrcore/cybrcore/blob/main/CONTRIBUTING.md)
+<table>
+  <tr>
+    <td span><a href="INSTALL.md"><img alt="Install Guide" src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/button-install-guide.png" height=40px></a>
+    <td><a href="https://github.com/cybrcore/cybrcore/blob/main/roadmap.md"><img alt="Roadmap" src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/button-roadmap.png" height=40px></a>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/cybrcore/cybrcore/blob/main/design-specification.md"><img alt="Design Specification" src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/button-design-specs.png" height=40px></a>
+    <td><a href="https://github.com/cybrcore/cybrcore/blob/main/design-philosophy.md"><img alt="Design Philosophy" src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/button-design-philosophy.png" height=40px></a>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/cybrcore/cybrcore/blob/main/ai-disclosure.md"><img alt="AI Disclosure" src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/button-ai-disclosure.png" height=40px></a>
+    <td><a href="https://github.com/cybrcore/cybrcore/blob/main/CONTRIBUTING.md"><img alt="Contributing" src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/buttons/button-contributing.png" height=40px></a>
+  </tr>
+</table>
 
 ## Content
 - [What's Inside](#whats-inside)
@@ -26,7 +37,7 @@
 - [Credits & Inspiration](#credits--inspiration)
 
 ## What's Inside
-- **Unified aesthetic** -- Lucid color palette ([cybrcolors](https://github.com/cybrcore/cybrcolors)) + 9 hand-crafted wallpapers ([cybrpapers](https://github.com/cybrcore/cybrpapers))  
+- **Unified aesthetic** -- Lucid color palette ([cybrcolors](https://github.com/cybrcore/cybrcolors)) + 12 hand-crafted wallpapers ([cybrpapers](https://github.com/cybrcore/cybrpapers))  
 - **Theme collection** -- Custom themes for 20+ applications  
 - **Terminal-centric workflow** -- Fast, integrated TUI/CLI tools  
 - **Modular by design** -- Use the full setup or cherry-pick individual themes  
